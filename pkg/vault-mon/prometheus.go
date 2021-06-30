@@ -32,7 +32,7 @@ type PromMetrics struct {
 }
 
 func PromWatchCerts(pkimon *PKIMon, interval time.Duration) {
-	expiry := prometheus.NewGaugeVec(prometheus.GaugeOpts{
+	expiry := promauto.NewGaugeVec(prometheus.GaugeOpts{
 		Name: "x509_cert_expiry",
 	}, labelNames)
 	age := promauto.NewGaugeVec(prometheus.GaugeOpts{
