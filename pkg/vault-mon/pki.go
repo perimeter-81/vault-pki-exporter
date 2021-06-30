@@ -126,6 +126,10 @@ func (pki *PKI) loadCerts() error {
 		return err
 	}
 
+	if secret == nil {
+		return nil
+	}
+
 	serialsList := vault.SecretList{}
 	err = mapstructure.Decode(secret.Data, &serialsList)
 	if err != nil {
