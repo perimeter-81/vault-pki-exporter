@@ -7,9 +7,9 @@ require (
 	github.com/hashicorp/vault/api v1.0.5-0.20190814205728-e9c5cd8aca98
 	github.com/influxdata/influxdb1-client v0.0.0-20190809212627-fc22c7df067e
 	github.com/mitchellh/mapstructure v1.1.2
-	github.com/prometheus/client_golang v1.2.1
-	github.com/sirupsen/logrus v1.4.2
+	github.com/prometheus/client_golang v1.11.1
+	github.com/sirupsen/logrus v1.6.0
 	github.com/spf13/cobra v0.0.5
 	github.com/spf13/viper v1.5.0
-	golang.org/x/crypto v0.0.0-20191011191535-87dc89f01550
+	golang.org/x/crypto v0.31.0
 )
